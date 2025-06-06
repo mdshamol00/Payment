@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mx.technology - bKash Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    h2 {
+      text-align: center;
+      color: #d6005a;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 15px;
+    }
+    input[type="text"], input[type="number"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #d6005a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #c2004e;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Pay with bKash</h2>
+    <form action="payment_process.php" method="POST">
+      <label for="amount">Amount (৳)</label>
+      <input type="number" id="amount" name="amount" value="3499" required readonly>
+      <label for="bkash_number">Your bKash Number</label>
+      <input type="text" id="bkash_number" name="bkash_number" placeholder="01XXXXXXXXX" required>
+      <button type="submit">Confirm Payment</button>
+    </form>
+  </div>
+</body>
+</html>
