@@ -1,68 +1,187 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mx.technology - bKash Payment</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Sign in - Google</title>
+
   <style>
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f3f3;
+
+      font-family: Roboto, Arial, sans-serif;
+
       display: flex;
+
       justify-content: center;
+
       align-items: center;
+
       height: 100vh;
+
       margin: 0;
-    }
-    .container {
+
       background-color: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 100%;
+
+    }
+
+    .container {
+
       max-width: 400px;
+
+      padding: 40px;
+
+      border: 1px solid #ddd;
+
+      border-radius: 8px;
+
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+
     }
-    h2 {
+
+    .logo {
+
       text-align: center;
-      color: #d6005a;
+
+      margin-bottom: 20px;
+
     }
-    form {
-      display: flex;
-      flex-direction: column;
+
+    .logo span {
+
+      font-size: 32px;
+
+      font-weight: bold;
+
+      color: #4285F4;
+
     }
-    label {
-      margin-top: 15px;
+
+    .logo span:nth-child(2) { color: #EA4335; }
+
+    .logo span:nth-child(3) { color: #FBBC05; }
+
+    .logo span:nth-child(4) { color: #34A853; }
+
+    h2 {
+
+      text-align: center;
+
+      font-size: 24px;
+
+      margin-bottom: 10px;
+
     }
-    input[type="text"], input[type="number"] {
-      padding: 10px;
+
+    p {
+
+      text-align: center;
+
+      font-size: 14px;
+
+      color: #555;
+
+      margin-bottom: 20px;
+
+    }
+
+    input {
+
+      width: 100%;
+
+      padding: 12px;
+
+      font-size: 16px;
+
+      margin-bottom: 15px;
+
       border: 1px solid #ccc;
-      border-radius: 5px;
+
+      border-radius: 4px;
+
     }
+
+    a {
+
+      font-size: 14px;
+
+      color: #1a73e8;
+
+      text-decoration: none;
+
+      display: block;
+
+      margin-bottom: 20px;
+
+    }
+
     button {
-      margin-top: 20px;
-      padding: 10px;
-      background-color: #d6005a;
+
+      width: 100%;
+
+      padding: 12px;
+
+      background-color: #1a73e8;
+
       color: white;
+
       border: none;
-      border-radius: 5px;
+
+      font-size: 16px;
+
+      border-radius: 4px;
+
       cursor: pointer;
+
     }
-    button:hover {
-      background-color: #c2004e;
+
+    .bottom-link {
+
+      text-align: center;
+
+      font-size: 14px;
+
+      margin-top: 10px;
+
     }
+
   </style>
+
 </head>
+
 <body>
+
   <div class="container">
-    <h2>Pay with bKash</h2>
-    <form action="payment_process.php" method="POST">
-      <label for="amount">Amount (৳)</label>
-      <input type="number" id="amount" name="amount" value="3499" required readonly>
-      <label for="bkash_number">Your bKash Number</label>
-      <input type="text" id="bkash_number" name="bkash_number" placeholder="01XXXXXXXXX" required>
-      <button type="submit">Confirm Payment</button>
-    </form>
+
+    <div class="logo">
+
+      <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+
+    </div>
+
+    <h2>Sign in</h2>
+
+    <p>Use your Google Account</p>
+
+    <input type="text" placeholder="Email or phone" />
+
+    <a href="#">Forgot email?</a>
+
+    <div class="bottom-link">
+
+      <a href="#">Create account</a>
+
+    </div>
+
+    <button>Next</button>
+
   </div>
+
 </body>
+
 </html>
